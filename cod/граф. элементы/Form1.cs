@@ -11,7 +11,7 @@ using System.Drawing.Drawing2D;
 
 namespace граф.элементы
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form//комментарий для 1-ой ветки
 
     {
         Rectangle Rectangle = new Rectangle(200, 10, 300, 200);
@@ -26,18 +26,7 @@ namespace граф.элементы
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Graphics g = Graphics.FromHwnd(pictureBox1.Handle);
-            g.Clear(Color.White);
-            if (listBox1.SelectedIndex == 0)
-                g.FillRectangle(Brushes.Aquamarine, Square);
-            if (listBox1.SelectedIndex == 1)
-                g.FillEllipse(Brushes.CadetBlue, Circle);
-            if (listBox1.SelectedIndex == 2)
-                g.FillRectangle(Brushes.Pink, Rectangle);
-            if (listBox1.SelectedIndex == 3)
-                g.FillEllipse(Brushes.RoyalBlue, Ellipse);
-            if (listBox1.SelectedIndex == 4)
-                g.FillPolygon(Brushes.YellowGreen,Triangle);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
