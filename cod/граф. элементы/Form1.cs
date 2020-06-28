@@ -11,7 +11,8 @@ using System.Drawing.Drawing2D;
 
 namespace граф.элементы
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form//комментарий для 1-ой ветки
+
 
     {
         Rectangle Rectangle = new Rectangle(200, 10, 300, 200);
